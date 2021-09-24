@@ -1,0 +1,19 @@
+.contener--center--column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    padding: 0 2%;
+    margin: 0;
+}
+
+.contener--center--row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
