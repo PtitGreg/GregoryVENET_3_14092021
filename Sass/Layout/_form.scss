@@ -1,18 +1,105 @@
-.contener--center--column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 body{
-    padding: 0 2%;
     margin: 0;
 }
 
-.contener--center--row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header{    
+    @include flex_column--text--center;
+    & h1{
+    margin: 0.5rem;
+    }
+    & form{
+        background-color: $grey-secondary;
+        width: 100%;
+        
+        @include flex--center;
+            & input{
+                border: none;
+                background-color: $grey-secondary;
+                height: 3rem;
+                padding-left: 1rem;
+                width: 10rem;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }    
+}
+
+.title_explorer{
+        @include flex_column--text--center;
+        background-color: $grey-primary;
+        padding: 2rem;
+        & h1{
+            width: 80%;
+            margin: 0.5rem;
+        }
+        & p{
+            margin: 0.7rem;
+            
+        }
+        & button{
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            margin: 1rem;
+            background-color: $color-primary;
+            color: $white;
+        }
+}
+
+.fonctioning{
+    padding: 5%;
+    & a{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-decoration: none;
+        background-color: $grey-primary;
+        border-radius:2rem;
+        height: 5rem;
+        margin: 1.5rem 0;
+        & p{
+            position: absolute;
+            color: $white;
+            padding: 0.5rem;
+            background-color: $color-primary;
+            border-radius: 3rem;
+        }
+        & i{
+            color: gray;
+            padding: 2rem;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        & h3{
+            color: $black;
+        }
+    }
+}
+
+.size_card{
+    width: 3rem;    
+}
+
+footer{
+    background-color: $chocolate;
+    padding: 0.4rem 2rem;
+    ul{
+        padding-left: 0;
+        li{
+            list-style-type: none;
+            padding: 0.4rem 0;
+        
+            .fa-utensils{
+                padding-right: 1rem;
+            }
+            .fa-hands-helping{
+                padding-right: 0.55rem;
+            }
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
 }
