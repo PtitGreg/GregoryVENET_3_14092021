@@ -1,6 +1,10 @@
 footer{
     background-color: $chocolate;
     padding: 0.4rem 2rem;
+    & .color-text-white{
+        color: $white;
+        font-weight: 500;        
+    }
     ul{
         padding-left: 0;
         li{
@@ -8,10 +12,10 @@ footer{
             padding: 0.4rem 0;
         
             .fa-utensils{
-                padding-right: 1rem;
+                padding-right: 0.5rem;
             }
             .fa-hands-helping{
-                padding-right: 0.55rem;
+                padding-right: 0.3rem;
             }
             a{
                 color: $white;

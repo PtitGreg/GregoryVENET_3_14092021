@@ -4,37 +4,39 @@
     border-radius: 3rem;
     margin: 1rem;
     color: $white;
-    font-size: 1rem;
     background: linear-gradient($color-secondary, $color-primary)
 }
 
 .buttons_fonctioning{
-    padding: 5%;
-    & a{
-        display: flex;
-        justify-content: start;
-        align-items: center;
+    padding: 2rem 1rem 2rem 1.7rem;
+    background-color: $white;
+    & .button_choice_fonctioning{
+        @include flex--center;
         text-decoration: none;
         background-color: $grey-primary;
         border-radius:1.5rem;
         height: 5rem;
         margin: 1.5rem 0;
         box-shadow: 0 5px 10px 1px $grey-secondary;
+        transition: 1s;
+        cursor: pointer;
         &:hover{
             background-color: $color_bg_hover-purple;
+            transition: 1s;
         }
-        & p{
-            position: absolute;
-            left: 1.4rem;
+
+        & .number_button{
+            position: relative;
+            left: -0.8rem;
             color: $white;
             padding: 0.2rem 0.45rem;
-            font-size: 0.8rem;
             background-color: $color-primary;
             border-radius: 10rem;
         }
-        & i{
+        & .icon_button{
             color: gray;
-            padding: 2rem;
+            padding: 1.5rem;
+            padding-left: 0.5rem;
             &:hover{
                 color: $color-primary;
             }
@@ -45,10 +47,22 @@
     }
 }
 
-.hearth::after{
-    display: none;
+.text_card{
+    @include flex--column;
+    padding: 0.5rem 1rem;
+    color: $black;
+    & h3{
+        margin: 0;
+               
+    }
+    .city{
+        margin: 0.5rem 0;
+    }
 }
-
-.hearth_solid::before{
-    display: none;
+.fa-heart{
+    position: absolute;
+    right: 2rem;
+    bottom: 1.5rem;
+    color: $color-primary;
+    font-weight: bold;    
 }

@@ -1,97 +1,118 @@
-.police_roboto {
+.police-roboto-size {
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
-.police_shrikhand {
+.police-shrikhand-size {
+  font-size: 2rem;
   font-family: 'Shrikhand', cursive;
 }
+
+.police-shrikhand-mod_size {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
+}
+
+input {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .button_explore_resto-purple {
   border: none;
   padding: 1rem;
   border-radius: 3rem;
   margin: 1rem;
   color: #ffffff;
-  font-size: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .buttons_fonctioning {
-  padding: 5%;
+  padding: 2rem 1rem 2rem 1.7rem;
+  background-color: #ffffff;
 }
 
-.buttons_fonctioning a {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.buttons_fonctioning .button_choice_fonctioning {
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   background-color: #f6f6f6;
   border-radius: 1.5rem;
   height: 5rem;
   margin: 1.5rem 0;
-  -webkit-box-shadow: 0 5px 10px 1px #eaeaea;
-          box-shadow: 0 5px 10px 1px #eaeaea;
+  box-shadow: 0 5px 10px 1px #eaeaea;
+  transition: 1s;
+  cursor: pointer;
 }
 
-.buttons_fonctioning a:hover {
+.buttons_fonctioning .button_choice_fonctioning:hover {
   background-color: #f5edff;
+  transition: 1s;
 }
 
-.buttons_fonctioning a p {
-  position: absolute;
-  left: 1.4rem;
+.buttons_fonctioning .button_choice_fonctioning .number_button {
+  position: relative;
+  left: -0.8rem;
   color: #ffffff;
   padding: 0.2rem 0.45rem;
-  font-size: 0.8rem;
   background-color: #9356DC;
   border-radius: 10rem;
 }
 
-.buttons_fonctioning a i {
+.buttons_fonctioning .button_choice_fonctioning .icon_button {
   color: gray;
-  padding: 2rem;
+  padding: 1.5rem;
+  padding-left: 0.5rem;
 }
 
-.buttons_fonctioning a i:hover {
+.buttons_fonctioning .button_choice_fonctioning .icon_button:hover {
   color: #9356DC;
 }
 
-.buttons_fonctioning a h3 {
+.buttons_fonctioning .button_choice_fonctioning h3 {
   color: #000000;
 }
 
-.hearth::after {
-  display: none;
+.text_card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  color: #000000;
 }
 
-.hearth_solid::before {
-  display: none;
+.text_card h3 {
+  margin: 0;
+}
+
+.text_card .city {
+  margin: 0.5rem 0;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+  color: #9356DC;
+  font-weight: bold;
+}
+
+html {
+  background-color: #99E2D0;
 }
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .title_explorer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #f6f6f6;
   padding: 2rem;
@@ -113,16 +134,9 @@ body {
 }
 
 .restaurant .content_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 68rem;
 }
 
@@ -132,15 +146,14 @@ body {
   border-radius: 1rem;
   text-decoration: none;
   position: relative;
+  box-shadow: 0 5px 5px #eaeaea;
 }
 
 .restaurant .image_resto {
   width: 100%;
   height: 11rem;
   border-radius: 1rem 1rem 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
+  object-fit: cover;
 }
 
 .restaurant .new {
@@ -153,63 +166,16 @@ body {
   border-radius: 0.15rem;
   position: absolute;
   right: 1rem;
-}
-
-.restaurant .footer_card {
-  position: relative;
-  top: 12rem;
-  padding: 0 2rem 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.restaurant .footer_card .text_card {
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 15rem;
-  height: 3rem;
-}
-
-.restaurant .footer_card .text_card h2 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.restaurant .footer_card .text_card p {
-  margin: 0;
+  bottom: 12rem;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #ffffff;
 }
 
 header h1 {
@@ -220,15 +186,9 @@ header h1 {
 header form {
   background-color: #eaeaea;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 header form input {
@@ -237,13 +197,16 @@ header form input {
   height: 3rem;
   padding-left: 1rem;
   width: 10rem;
-  font-weight: 600;
-  font-size: 1rem;
 }
 
 footer {
   background-color: #353535;
   padding: 0.4rem 2rem;
+}
+
+footer .color-text-white {
+  color: #ffffff;
+  font-weight: 500;
 }
 
 footer ul {
@@ -256,11 +219,11 @@ footer ul li {
 }
 
 footer ul li .fa-utensils {
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 footer ul li .fa-hands-helping {
-  padding-right: 0.55rem;
+  padding-right: 0.3rem;
 }
 
 footer ul li a {

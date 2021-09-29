@@ -1,8 +1,18 @@
-.police_roboto {
+.police-roboto-size{
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
   }
   
-.police_shrikhand {
+.police-shrikhand-size{    
+    font-size: 2rem;
     font-family: 'Shrikhand', cursive;
   }
-  /*# sourceMappingURL=main.css.map */
+.police-shrikhand-mod_size{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.2rem;
+  }
+
+  input{
+    font-weight: 600;
+    font-size: 1rem;
+  }

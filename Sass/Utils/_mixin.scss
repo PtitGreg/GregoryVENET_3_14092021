@@ -1,4 +1,4 @@
-@mixin flex_column--text--center{
+@mixin flex_column--text--full_center{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-@mixin flex--center{
+@mixin flex--center--center{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,4 +27,9 @@
 @mixin flex--column {
     display: flex;
     flex-direction: column;
+}
+
+@mixin flex--center {
+    display: flex;
+    align-items: center;
 }
