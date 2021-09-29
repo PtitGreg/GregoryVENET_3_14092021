@@ -1,0 +1,21 @@
+header{    
+    @include flex_column--text--center;
+    & h1{
+    margin: 0.5rem;
+    font-weight: 100;
+    }
+    & form{
+        background-color: $grey-secondary;
+        width: 100%;        
+        @include flex--center;
+            & input{
+                border: none;
+                background-color: $grey-secondary;
+                height: 3rem;
+                padding-left: 1rem;
+                width: 10rem;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }    
+}

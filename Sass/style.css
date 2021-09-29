@@ -5,53 +5,77 @@
 .police_shrikhand {
   font-family: 'Shrikhand', cursive;
 }
+.button_explore_resto-purple {
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.buttons_fonctioning {
+  padding: 5%;
+}
+
+.buttons_fonctioning a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  border-radius: 1.5rem;
+  height: 5rem;
+  margin: 1.5rem 0;
+  -webkit-box-shadow: 0 5px 10px 1px #eaeaea;
+          box-shadow: 0 5px 10px 1px #eaeaea;
+}
+
+.buttons_fonctioning a:hover {
+  background-color: #f5edff;
+}
+
+.buttons_fonctioning a p {
+  position: absolute;
+  left: 1.4rem;
+  color: #ffffff;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.8rem;
+  background-color: #9356DC;
+  border-radius: 10rem;
+}
+
+.buttons_fonctioning a i {
+  color: gray;
+  padding: 2rem;
+}
+
+.buttons_fonctioning a i:hover {
+  color: #9356DC;
+}
+
+.buttons_fonctioning a h3 {
+  color: #000000;
+}
+
+.hearth::after {
+  display: none;
+}
+
+.hearth_solid::before {
+  display: none;
+}
+
 body {
   margin: 0;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0.5rem;
-}
-
-header form {
-  background-color: #eaeaea;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header form input {
-  border: none;
-  background-color: #eaeaea;
-  height: 3rem;
-  padding-left: 1rem;
-  width: 10rem;
-  font-weight: bold;
-  font-size: 1rem;
 }
 
 .title_explorer {
@@ -82,59 +106,139 @@ header form input {
   margin: 0.7rem;
 }
 
-.title_explorer button {
-  border: none;
-  padding: 1rem;
-  border-radius: 3rem;
-  margin: 1rem;
-  background-color: #9356DC;
-  color: #ffffff;
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem 4rem;
+  height: auto;
 }
 
-.fonctioning {
-  padding: 5%;
-}
-
-.fonctioning a {
+.restaurant .content_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 68rem;
+}
+
+.restaurant .link_card_resto {
+  background-color: #ffffff;
+  height: 16rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.restaurant .image_resto {
+  width: 100%;
+  height: 11rem;
+  border-radius: 1rem 1rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.restaurant .new {
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 600;
+  height: 1.6rem;
+  width: 4rem;
+  padding: 0.5rem 1rem 0rem;
+  border-radius: 0.15rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.restaurant .footer_card {
+  position: relative;
+  top: 12rem;
+  padding: 0 2rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  background-color: #f6f6f6;
-  border-radius: 2rem;
-  height: 5rem;
-  margin: 1.5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.fonctioning a p {
-  position: absolute;
-  color: #ffffff;
-  padding: 0.5rem;
-  background-color: #9356DC;
-  border-radius: 3rem;
-}
-
-.fonctioning a i {
-  color: gray;
-  padding: 2rem;
-}
-
-.fonctioning a i:hover {
-  color: #9356DC;
-}
-
-.fonctioning a h3 {
+.restaurant .footer_card .text_card {
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15rem;
+  height: 3rem;
 }
 
-.size_card {
-  width: 3rem;
+.restaurant .footer_card .text_card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.restaurant .footer_card .text_card p {
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.5rem;
+  font-weight: 100;
+}
+
+header form {
+  background-color: #eaeaea;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header form input {
+  border: none;
+  background-color: #eaeaea;
+  height: 3rem;
+  padding-left: 1rem;
+  width: 10rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 footer {

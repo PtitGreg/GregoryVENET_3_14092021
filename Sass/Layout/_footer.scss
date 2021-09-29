@@ -1,0 +1,22 @@
+footer{
+    background-color: $chocolate;
+    padding: 0.4rem 2rem;
+    ul{
+        padding-left: 0;
+        li{
+            list-style-type: none;
+            padding: 0.4rem 0;
+        
+            .fa-utensils{
+                padding-right: 1rem;
+            }
+            .fa-hands-helping{
+                padding-right: 0.55rem;
+            }
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
