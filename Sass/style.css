@@ -18,6 +18,68 @@ input {
   font-size: 1rem;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+header h1 {
+  margin: 0.5rem;
+  font-weight: 100;
+}
+
+header form {
+  background-color: #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header form input {
+  border: none;
+  background-color: #eaeaea;
+  height: 3rem;
+  padding-left: 1rem;
+  width: 10rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 0.4rem 2rem;
+}
+
+footer .color-text-white {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  padding: 0.3rem 0;
+}
+
+footer ul li .fa-utensils {
+  padding-right: 0.5rem;
+}
+
+footer ul li .fa-hands-helping {
+  padding-right: 0.3rem;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .button_explore_resto-purple {
   border: none;
   padding: 1rem;
@@ -93,7 +155,21 @@ input {
   right: 2rem;
   bottom: 1.5rem;
   color: #9356DC;
-  font-weight: bold;
+  font-size: 22px;
+}
+
+.size {
+  font-size: 1.5rem;
+}
+
+.heart_solid {
+  opacity: 0;
+  transition: 1s;
+}
+
+.heart_solid:hover, .heart_solid::marker {
+  opacity: 1;
+  transition: 1s;
 }
 
 html {
@@ -167,66 +243,4 @@ body {
   position: absolute;
   right: 1rem;
   bottom: 12rem;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-header h1 {
-  margin: 0.5rem;
-  font-weight: 100;
-}
-
-header form {
-  background-color: #eaeaea;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header form input {
-  border: none;
-  background-color: #eaeaea;
-  height: 3rem;
-  padding-left: 1rem;
-  width: 10rem;
-}
-
-footer {
-  background-color: #353535;
-  padding: 0.4rem 2rem;
-}
-
-footer .color-text-white {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-footer ul {
-  padding-left: 0;
-}
-
-footer ul li {
-  list-style-type: none;
-  padding: 0.4rem 0;
-}
-
-footer ul li .fa-utensils {
-  padding-right: 0.5rem;
-}
-
-footer ul li .fa-hands-helping {
-  padding-right: 0.3rem;
-}
-
-footer ul li a {
-  color: #ffffff;
-  text-decoration: none;
 }
