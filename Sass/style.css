@@ -19,10 +19,19 @@ input {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: #ffffff;
 }
@@ -30,18 +39,30 @@ header {
 header h1 {
   margin: 0.5rem;
   font-weight: 100;
+  font-size: xx-large;
+}
+
+header .title {
+  text-decoration: none;
 }
 
 header form {
   background-color: #eaeaea;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header form input {
   border: none;
+  border-top: grey;
   background-color: #eaeaea;
   height: 3rem;
   padding-left: 1rem;
@@ -56,6 +77,16 @@ footer {
 footer .color-text-white {
   color: #ffffff;
   font-weight: 500;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+footer .color-text-white:hover {
+  color: #9356DC;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 footer ul {
@@ -78,6 +109,16 @@ footer ul li .fa-hands-helping {
 footer ul li a {
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+footer ul li a:hover {
+  color: #9356DC;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .button_explore_resto-purple {
@@ -86,7 +127,18 @@ footer ul li a {
   border-radius: 3rem;
   margin: 1rem;
   color: #ffffff;
-  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  background: -webkit-linear-gradient(280deg, #FF79DA, #9356DC);
+  background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+}
+
+.button_explore_resto-purple:hover {
+  background: #9356DC;
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
 }
 
 .buttons_fonctioning {
@@ -95,20 +147,29 @@ footer ul li a {
 }
 
 .buttons_fonctioning .button_choice_fonctioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   background-color: #f6f6f6;
   border-radius: 1.5rem;
   height: 5rem;
   margin: 1.5rem 0;
-  box-shadow: 0 5px 10px 1px #eaeaea;
+  -webkit-box-shadow: 0 5px 10px 1px #eaeaea;
+          box-shadow: 0 5px 10px 1px #eaeaea;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
 
 .buttons_fonctioning .button_choice_fonctioning:hover {
   background-color: #f5edff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -116,9 +177,18 @@ footer ul li a {
   position: relative;
   left: -0.8rem;
   color: #ffffff;
-  padding: 0.2rem 0.45rem;
+  padding: 0.15rem 0.45rem;
   background-color: #9356DC;
   border-radius: 10rem;
+}
+
+.buttons_fonctioning .button_choice_fonctioning .number_button:hover {
+  -webkit-transform: rotatex(360deg);
+      -ms-transform: rotatex(360deg);
+          transform: rotatex(360deg);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
 }
 
 .buttons_fonctioning .button_choice_fonctioning .icon_button {
@@ -136,8 +206,13 @@ footer ul li a {
 }
 
 .text_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0.5rem 1rem;
   color: #000000;
 }
@@ -155,24 +230,23 @@ footer ul li a {
   right: 2rem;
   bottom: 1.5rem;
   color: #9356DC;
-  font-size: 22px;
 }
 
 .size {
-<<<<<<< HEAD
-  font-size: 1.7rem;
-=======
-  font-size: 1.5rem;
->>>>>>> c8c9e7c0a593714d97835942fe54143be3d76f1b
+  font-size: 1.4rem;
 }
 
-.heart_solid {
+.size .heart_solid {
   opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
-.heart_solid:hover, .heart_solid::marker {
+.size .heart_solid:hover {
   opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -182,17 +256,36 @@ html {
 
 body {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1000px;
   margin: auto;
 }
 
+h1 {
+  text-decoration: none;
+  color: #000000;
+}
+
 .title_explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: #f6f6f6;
   padding: 2rem;
@@ -214,9 +307,16 @@ body {
 }
 
 .restaurant .content_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 68rem;
 }
 
@@ -226,14 +326,28 @@ body {
   border-radius: 1rem;
   text-decoration: none;
   position: relative;
-  box-shadow: 0 5px 5px #eaeaea;
+  -webkit-box-shadow: 0 5px 5px #eaeaea;
+          box-shadow: 0 5px 5px #eaeaea;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.restaurant .link_card_resto:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .restaurant .image_resto {
   width: 100%;
   height: 11rem;
   border-radius: 1rem 1rem 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant .new {

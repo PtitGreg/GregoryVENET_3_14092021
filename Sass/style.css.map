@@ -8,5 +8,7 @@
         "Layout/_form.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "style.css",
+    "prefix": "postcss style.css --use autoprefixer -d prefixed/",
+    "browserlist": "last 4 versions"
 }

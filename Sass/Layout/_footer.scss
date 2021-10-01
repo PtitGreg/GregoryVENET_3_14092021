@@ -3,7 +3,12 @@ footer{
     padding: 0.4rem 2rem;
     & .color-text-white{
         color: $white;
-        font-weight: 500;        
+        font-weight: 500;
+        transition: 1s;
+        &:hover{
+            color: $color-primary;
+            transition: 1s;
+        }
     }
     ul{
         padding-left: 0;
@@ -20,6 +25,11 @@ footer{
             a{
                 color: $white;
                 text-decoration: none;
+                transition: 1s;
+                &:hover{
+                    color: $color-primary;
+                    transition: 1s;
+                }
             }
         }
     }

@@ -1,4 +1,3 @@
-$police-shrihand: shrihand;
 
 $color-primary:#9356DC;
 
@@ -18,3 +17,7 @@ $grey-secondary: #eaeaea;
 
 $color_bg_hover-purple: #f5edff;
 
+$breakpoints: (
+    "mini":(min-width: 700px),
+    "medium":(min-width: 900px)
+)

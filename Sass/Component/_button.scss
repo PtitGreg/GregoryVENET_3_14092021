@@ -4,7 +4,11 @@
     border-radius: 3rem;
     margin: 1rem;
     color: $white;
-    background: linear-gradient($color-secondary, $color-primary)
+    @include bg-lin_grad-bi_color;
+    &:hover{
+        background: $color-primary ;
+        box-shadow: 0 0 10px 0 $black;
+    }
 }
 
 .buttons_fonctioning{
@@ -29,9 +33,13 @@
             position: relative;
             left: -0.8rem;
             color: $white;
-            padding: 0.2rem 0.45rem;
+            padding: 0.15rem 0.45rem;
             background-color: $color-primary;
             border-radius: 10rem;
+            &:hover{
+                transform: rotatex(360deg);
+                transition: 2s;
+            }
         }
         & .icon_button{
             color: gray;
@@ -66,18 +74,14 @@
 }
 
 .size{
-<<<<<<< HEAD
-    font-size: 1.7rem;
-=======
-    font-size: 1.5rem;
->>>>>>> c8c9e7c0a593714d97835942fe54143be3d76f1b
-}
-
-.heart_solid{
+    font-size: 1.4rem;
+    .heart_solid{
     opacity: 0;
     transition: 1s;
-    &:hover, &::marker{
+    
+    &:hover{
         opacity: 1;
         transition: 1s;
+        }
     }
 }

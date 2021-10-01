@@ -10,6 +10,12 @@ body{
     margin: auto;
 }
 
+h1{
+    text-decoration: none;
+    color: $black;
+}
+
+
 .title_explorer{
         @include flex_column--text--full_center;
         background-color: $grey-primary;
@@ -24,6 +30,7 @@ body{
         }
         
 }
+
 
 .restaurant{
     background-color: $grey-primary;
@@ -40,6 +47,11 @@ body{
         text-decoration: none;
         position: relative;
         box-shadow: 0 5px 5px  $grey-secondary;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.03);
+            transition: 1s;
+        }
     }
     & .image_resto{
         width: 100%;
