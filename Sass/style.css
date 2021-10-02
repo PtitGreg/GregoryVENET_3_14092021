@@ -136,7 +136,9 @@ footer ul li a:hover {
 }
 
 .button_explore_resto-purple:hover {
-  background: #9356DC;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-box-shadow: 0 0 10px 0 #000000;
           box-shadow: 0 0 10px 0 #000000;
 }
@@ -340,6 +342,8 @@ h1 {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
 }
 
 .restaurant .image_resto {

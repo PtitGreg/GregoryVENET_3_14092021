@@ -51,6 +51,7 @@ h1{
         &:hover{
             transform: scale(1.03);
             transition: 1s;
+            box-shadow: 0 0 10px 0 $black;
         }
     }
     & .image_resto{

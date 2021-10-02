@@ -6,7 +6,7 @@
     color: $white;
     @include bg-lin_grad-bi_color;
     &:hover{
-        background: $color-primary ;
+        transform: scale(1.2);
         box-shadow: 0 0 10px 0 $black;
     }
 }
