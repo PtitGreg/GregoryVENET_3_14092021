@@ -24,6 +24,12 @@
     justify-content: space-between;
 }
 
+@mixin flex--center--center--around {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin flex--column {
     display: flex;
     flex-direction: column;
@@ -32,6 +38,7 @@
 @mixin flex--center {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 @mixin hearth-position-color {
@@ -41,7 +48,7 @@
     color: $color-primary;
 }
 
-@mixin bg-lin_grad-bi_color{
+@mixin bg-lin_grad-bi_color {
     transition:1s;
     background: linear-gradient(170deg, $color-secondary, $color-primary);
 }

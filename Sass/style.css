@@ -18,7 +18,7 @@ input {
   font-size: 1rem;
 }
 
-header {
+.flex_column--text--full_center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,17 +36,17 @@ header {
   background-color: #ffffff;
 }
 
-header h1 {
+.flex_column--text--full_center h1 {
   margin: 0.5rem;
   font-weight: 100;
   font-size: xx-large;
 }
 
-header .title {
+.flex_column--text--full_center .title {
   text-decoration: none;
 }
 
-header form {
+.flex_column--text--full_center form {
   background-color: #eaeaea;
   width: 100%;
   display: -webkit-box;
@@ -60,13 +60,35 @@ header form {
           align-items: center;
 }
 
-header form input {
+.flex_column--text--full_center form input {
   border: none;
   border-top: grey;
   background-color: #eaeaea;
   height: 3rem;
   padding-left: 1rem;
   width: 10rem;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flex--center--center--around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.flex--center--center--around img {
+  width: 100%;
 }
 
 footer {
@@ -155,6 +177,9 @@ footer ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
   background-color: #f6f6f6;
   border-radius: 1.5rem;

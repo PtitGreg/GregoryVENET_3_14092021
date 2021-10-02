@@ -1,4 +1,6 @@
-header{    
+// For Main html page
+
+.flex_column--text--full_center{    
     @include flex_column--text--full_center;
     background-color: $white;
     
@@ -25,3 +27,17 @@ header{
             }
         }    
  }
+
+// for seconds html
+
+body{
+    box-sizing: border-box
+}
+
+.flex--center--center--around{
+    @include flex--center--center--around;
+    background-color: $grey-primary;
+    & img{
+        width: 100%;
+    }
+}
