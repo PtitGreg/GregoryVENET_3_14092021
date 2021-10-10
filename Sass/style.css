@@ -179,8 +179,8 @@ footer ul li a:hover {
   border-radius: 1.5rem;
   height: 5rem;
   margin: 1.5rem 0;
-  -webkit-box-shadow: 0 5px 5px #eaeaea;
-          box-shadow: 0 5px 5px #eaeaea;
+  -webkit-box-shadow: 0 5px 15px 2px #eaeaea;
+          box-shadow: 0 5px 15px 2px #eaeaea;
   cursor: pointer;
   -webkit-transition: background-color .4s;
   -o-transition: background-color .4s;
