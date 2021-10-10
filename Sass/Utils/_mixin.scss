@@ -1,6 +1,13 @@
-@mixin flex_column--text--full_center{
+@mixin flex--base--column{
     display: flex;
     flex-direction: column;
+}
+
+@mixin flex--base {
+    display: flex;    
+}
+
+@mixin flex_column--text--full_center {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -27,7 +34,7 @@
 @mixin flex--center--center--around {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 @mixin flex--column {
@@ -38,7 +45,6 @@
 @mixin flex--center {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 @mixin hearth-position-color {
@@ -49,7 +55,7 @@
 }
 
 @mixin bg-lin_grad-bi_color {
-    transition:1s;
+    transition: 1s;
     background: linear-gradient(170deg, $color-secondary, $color-primary);
 }
 

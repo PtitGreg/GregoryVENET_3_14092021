@@ -14,12 +14,14 @@
     }
     & form{
         background-color: $grey-secondary;
-        width: 100%;        
+        width: 100%;
+        box-shadow: inset 0px 6px 8px -10px $black;
         @include flex--center--center;
             & input{
                 border: none;
                 border-top: grey;
                 background-color: $grey-secondary;
+                box-shadow: inset 0px 6px 8px -10px $black;
                 height: 3rem;
                 padding-left: 1rem;
                 width: 10rem;
