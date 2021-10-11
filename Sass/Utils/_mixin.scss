@@ -8,54 +8,54 @@
 }
 
 @mixin flex_column--text--full_center {
+    @include flex--base--column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 @mixin flex--center--center{
-    display: flex;
+    @include flex--base;
     justify-content: center;
     align-items: center;
 }
 
 @mixin flex--column--between {
-    display: flex;
-    flex-direction: column;
+    @include flex--base--column;
     justify-content: space-between;
 }
 
 @mixin flex--center--between {
-    display: flex;
+    @include flex--base;
     align-items: center;
     justify-content: space-between;
 }
 
 @mixin flex--center--center--around {
-    display: flex;
+    @include flex--base;
     align-items: center;
     justify-content: space-around;
 }
 
 @mixin flex--column {
-    display: flex;
     flex-direction: column;
 }
 
-@mixin flex--center {
-    display: flex;
-    align-items: center;
-}
 
-@mixin hearth-position-color {
+@mixin hearth-position {
     position: absolute;
     right: 2rem;
     bottom: 1.5rem;
-    color: $color-primary;
+    color: $black;
 }
 
 @mixin bg-lin_grad-bi_color {
     transition: 1s;
     background: linear-gradient(170deg, $color-secondary, $color-primary);
+}
+
+@mixin bi_color-pri-sec {
+    color: line
+
 }
 
