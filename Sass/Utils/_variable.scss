@@ -1,4 +1,4 @@
-
+// Colors
 $color-primary:#9356DC;
 
 $color-secondary: #FF79DA;
@@ -17,8 +17,10 @@ $grey-secondary: #eaeaea;
 
 $color_bg_hover-purple: #f5edff;
 
+// size
+$size_heart: 3rem;
+
 $breakpoints: (
     "mini":(min-width: 700px),
     "medium":(min-width: 900px)
 )
-

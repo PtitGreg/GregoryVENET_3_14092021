@@ -15,7 +15,6 @@ h1{
     color: $black;
 }
 
-
 .title_explorer{
         @include flex_column--text--full_center;
         background-color: $grey-primary;
