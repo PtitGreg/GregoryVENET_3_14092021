@@ -18,9 +18,8 @@ $grey-secondary: #eaeaea;
 $color_bg_hover-purple: #f5edff;
 
 // size
-$size_heart: 3rem;
+$size_heart: 2rem;
 
-$breakpoints: (
-    "mini":(min-width: 700px),
-    "medium":(min-width: 900px)
-)
+// $breakpoints
+$queri-xs:"min-width: 700px";
+$queri-m:"min-width: 900px";

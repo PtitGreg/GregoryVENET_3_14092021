@@ -1,46 +1,44 @@
-@mixin flex--base--column{
+@mixin flexbox ($dir, $al-items, $jus-cont){
     display: flex;
-    flex-direction: column;
+    flex-direction: $dir;
+    align-items: $al-items;
+    justify-content: $jus-cont;
 }
 
-@mixin flex--base {
-    display: flex;    
-}
 
-@mixin flex_column--text--full_center {
-    @include flex--base--column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+// @mixin flex_column--text--full_center {
+//     @include flex--base--column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+// }
 
-@mixin flex--center--center{
-    @include flex--base;
-    justify-content: center;
-    align-items: center;
-}
+// @mixin flex--center--center{
+//     @include flex--base;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-@mixin flex--column--between {
-    @include flex--base--column;
-    justify-content: space-between;
-}
+// @mixin flex--column--between {
+//     @include flex--base--column;
+//     justify-content: space-between;
+// }
 
-@mixin flex--center--between {
-    @include flex--base;
-    align-items: center;
-    justify-content: space-between;
-}
+// @mixin flex--center--between {
+//     @include flex--base;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 
-@mixin flex--center--center--around {
-    @include flex--base;
-    align-items: center;
-    justify-content: space-around;
-}
+// @mixin flex--center--center--around {
+//     @include flex--base;
+//     align-items: center;
+//     justify-content: space-around;
+// }
 
-@mixin flex--column {
-    flex-direction: column;
-}
-
+// @mixin flex--column {
+//     flex-direction: column;
+// }
 
 @mixin hearth-position {
     position: absolute;
