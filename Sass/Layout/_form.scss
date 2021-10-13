@@ -1,75 +1,90 @@
 * { box-sizing: border-box; }
+* {text-decoration: none;}
 
 html{
     background-color: $color-tertiary;
 }
 
 body{
-    margin: 0;
     max-width: 1000px;
-    margin: auto;
-}
-
-h1{
-    text-decoration: none;
-    color: $black;
+    margin:0 auto;
 }
 
 .title_explorer{
-        @include flex_column--text--full_center;
+        @include flexbox(flex, column, center, center);
+        text-align: center;
         background-color: $grey-primary;
-        padding: 2rem;
-        & h2{
+        padding: $padding;
+        padding-bottom: $padding*3;
+        .title_h2-size{
             width: 80%;
             margin: 0.5rem;
-        }
-        & p{
-            margin: 0.7rem;
-            
-        }
-        
+        }   
 }
 
 
 .restaurant{
     background-color: $grey-primary;
-    padding: 2rem 1rem 4rem;
-    height: auto;
-    & .content_cards{
-        @include flex--column--between;
-        height: 68rem;
+    padding: $padding*2 0rem $padding*3;
+    .title_h2-size{
+        padding-left: $padding;
     }
-    & .link_card_resto{
+    .content_cards{
+        @include flexbox(flex, row wrap, null, space-around);
+        height: auto;
+    }
+    .link_card_resto{
         background-color: $white;
+        width: 100%;
         height: 16rem;
         border-radius: 1rem;
-        text-decoration: none;
         position: relative;
-        box-shadow: 0 5px 5px  $grey-secondary;
+        margin:$margin/2 $margin;
+        box-shadow: $box_shadow $grey-secondary;
         transition: 1s;
         &:hover{
             transform: scale(1.03);
             transition: .4s;
-            box-shadow: 0 0 10px 0 $black;
+            box-shadow: $box_shadow $black;
         }
     }
-    & .image_resto{
+    .image_resto{
         width: 100%;
-        height: 11rem;
+        height: 70%;
         border-radius: 1rem 1rem 0 0;
         object-fit: cover;
     }
-    & .new{
+    .new{
         background-color: $color-tertiary;
         color: darken($color-tertiary, 40%);
         font-weight: 600;
+        text-align: center;
+        padding-top: $padding/4;
         height: 1.6rem;
-        width: 4rem;
-        padding: 0.5rem 1rem 0rem;
+        width: 5rem;
         border-radius: 0.15rem;
         position: absolute;
         right: 1rem;
         bottom: 12rem;
     }
+}
 
+// childs HTML
+
+
+.img_html_child-size{
+    width: 100%;
+}
+
+
+.card_menu_bg-color{
+    background-color: $grey-primary;
+    position: relative;
+    top: -10rem;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.title_child-flex-pol{
+    @include flexbox(flex, null, center, space-around);
+    
 }

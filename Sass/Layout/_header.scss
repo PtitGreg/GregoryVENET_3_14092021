@@ -1,44 +1,46 @@
 // For Main html page
-.flex-col-cent-cent{    
-    @include flexbox ($dir:column);
+
+.header_flex-col-cent-cent{
+    @include flexbox (flex, column, center, center);
     background-color: $white;
     margin: 0;
-    & h1{
-    font-weight: 100;   
-    font-size: xx-large;
 
-    }
-    & .title{
-        text-decoration: none;
-    }
-    & form{
+    .form-flex-size-col{
+        @include flexbox(flex, row, center, center);
         background-color: $grey-secondary;
         width: 100%;
         box-shadow: inset 0px 6px 8px -10px $black;
-        @include flexbox ($dir:row);
-            & input{
-                border: none;
-                border-top: grey;
-                background-color: $grey-secondary;
-                box-shadow: inset 0px 6px 8px -10px $black;
-                height: 3rem;
-                padding-left: 1rem;
-                width: 10rem;
-                
-            }
-        }    
+        .input-color-size{
+            border: none;
+            border-top: grey;
+            background-color: $grey-secondary;
+            box-shadow: inset 0px 6px 8px -10px $black;
+            height: 3rem;
+            padding-left: $padding;
+            width: 10rem;
+        }
+    }    
  }
 
-// for seconds html
-
-body{
-    box-sizing: border-box
+.title-size-color{
+    font-weight: 100;   
+    font-size: xx-large;
+    height: 2rem;
+    color: $black
 }
 
-.flex--center--center--around{
-    @include flex--center--center--around;
-    background-color: $grey-primary;
-    & img{
-        width: 100%;
+// for childs html
+.header-fle-cen-cen-aro{
+    background-color: $grey-primary;    
+    .fa-arrow-left{
+        float: left;
+        padding: $padding*1.5;
+        font-size: 1.3rem;
+    }
+    .title-size-color{
+        text-align: center;
+        height: auto;
+        padding: $padding;
+        margin: 0;
     }
 }
