@@ -1,5 +1,9 @@
-* { box-sizing: border-box; }
-* {text-decoration: none;}
+* { box-sizing: border-box}
+* {text-decoration: none}
+
+h2, h3{
+    margin: 0;
+}
 
 html{
     background-color: $color-tertiary;
@@ -76,15 +80,34 @@ body{
     width: 100%;
 }
 
-
+.title_child-flex-pol{
+    @include flexbox(flex, null, center, space-between);
+    font-size: $font-size*1.2;
+    .title_resto-weight{
+        font-weight: 100;
+    }
+    .fa-heart{
+        font-size: $font-size*1.7;
+        padding: $padding;
+    }
+}
 .card_menu_bg-color{
+    height: auto;
     background-color: $grey-primary;
     position: relative;
-    top: -10rem;
+    padding: $padding;
+    top: -50px;
     border-radius: 3rem 3rem 0 0;
 }
 
-.title_child-flex-pol{
-    @include flexbox(flex, null, center, space-around);
+.types_dish{
+    @include flexbox(flex, column, null, space-around);
     
 }
+
+.dish{
+        background-color: $white;
+        border-radius: $bor_rad;
+        padding: $padding/2;
+        height: 5rem;
+    }

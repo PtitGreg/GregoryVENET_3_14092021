@@ -1,34 +1,28 @@
-footer{
+.footer-color-size{
     background-color: $chocolate;
     padding: $padding/2 $padding*2;
-    & .color-text-white{
-        color: $white;
-        font-weight: 500;
-        transition: 1s;
-        &:hover{
-            color: $color-primary;
-            transition: .4s;
-        }
     }
-    ul{
-        padding-left: 0;
-        li{
-            list-style-type: none;
-            padding: $padding/3 0;
-        
-            .fa-utensils{
-                padding-right: $padding/2;
-            }
-            .fa-hands-helping{
-                padding-right: $padding/3;
-            }
-            a{
-                color: $white;
-                transition: .4s;
-                &:hover{
-                    color: $color-primary;
-                }
-            }
+
+.text-color-size{
+    color: $white;
+    font-weight: 500;
+    transition: 1s;
+    &:hover{
+        color: $color-primary;
+        transition: .4s;
+    }
+}
+
+.ul-style_none{
+    list-style: none;
+    padding: 0;
+    .li-pad{
+        padding-bottom: $padding/2;
+        .fas{
+            padding-right: $padding/2;
+        }
+        .fa-hands-helping{
+            padding-right: $padding/4;
         }
     }
 }

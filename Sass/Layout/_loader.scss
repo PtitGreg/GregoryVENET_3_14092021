@@ -1,0 +1,31 @@
+.content_loader{
+    @include flexbox(flex, null, null, center);
+    background-color: $color-primary;
+}
+.loader{
+        animation: loader 3s 300ms alternate-reverse forwards;
+        position: absolute;
+        top: 50%;
+        position: fixed;
+        z-index: 1;
+        transform: scale(0);
+}
+@keyframes loader {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        color: $color-secondary;
+    }
+    50%{
+        transform: scale(3);
+        color: $black;
+    }
+    75% {
+        color: $color-secondary;
+    }
+    100% {
+        transform: scale(2);
+
+    }
+}
