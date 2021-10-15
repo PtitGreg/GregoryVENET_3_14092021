@@ -92,7 +92,7 @@ body{
     }
 }
 .card_menu_bg-color{
-    height: auto;
+    height: 80rem;
     background-color: $grey-primary;
     position: relative;
     padding: $padding;
@@ -102,12 +102,20 @@ body{
 
 .types_dish{
     @include flexbox(flex, column, null, space-around);
-    
+    height: 20rem;
 }
 
 .dish{
-        background-color: $white;
-        border-radius: $bor_rad;
-        padding: $padding/2;
-        height: 5rem;
+    background-color: $white;
+    border-radius: $bor_rad;
+    padding: $padding/2;
+    height: 5rem;
+    z-index: 0;
+    .price{
+        bottom: 1rem;
+        padding-right: $padding;
+        display: inline-block;
+        
     }
+}
+

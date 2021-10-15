@@ -118,7 +118,7 @@
   padding-right: 0.25rem;
 }
 
-.button_explore_resto-purple {
+.btn_exp_resto-purple, .btn-purple {
   border: none;
   padding: 1rem;
   border-radius: 3rem;
@@ -135,18 +135,18 @@
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.button_explore_resto-purple:hover {
+.btn_exp_resto-purple:hover, .btn-purple:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.buttons_fonctioning {
+.btns_fonctioning {
   padding: 2rem;
   background-color: #ffffff;
 }
 
-.buttons_fonctioning .button_choice_fonctioning {
+.btns_fonctioning .button_choice_fonctioning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,11 +165,11 @@
   transition: background-color .4s;
 }
 
-.buttons_fonctioning .button_choice_fonctioning:hover {
+.btns_fonctioning .button_choice_fonctioning:hover {
   background-color: #f5edff;
 }
 
-.buttons_fonctioning .button_choice_fonctioning .number_button {
+.btns_fonctioning .button_choice_fonctioning .number_button {
   position: relative;
   left: -0.8rem;
   color: #ffffff;
@@ -183,19 +183,19 @@
   transition: transform 4s, -webkit-transform 4s;
 }
 
-.buttons_fonctioning .button_choice_fonctioning .number_button:hover {
+.btns_fonctioning .button_choice_fonctioning .number_button:hover {
   -webkit-transform: rotatex(2turn);
       -ms-transform: rotatex(2turn);
           transform: rotatex(2turn);
 }
 
-.buttons_fonctioning .button_choice_fonctioning .icon_button {
+.btns_fonctioning .button_choice_fonctioning .icon_button {
   color: gray;
   padding-left: 0.5rem;
   padding-right: 1.5rem;
 }
 
-.buttons_fonctioning .button_choice_fonctioning .icon_button:hover {
+.btns_fonctioning .button_choice_fonctioning .icon_button:hover {
   color: #9356DC;
 }
 
@@ -257,6 +257,14 @@
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   background: -o-linear-gradient(#9356DC, #FF79DA);
   background: linear-gradient(#9356DC, #FF79DA);
+}
+
+.heart_child {
+  height: 2rem;
+}
+
+.btn-purple {
+  display: table;
 }
 
 * {
@@ -402,7 +410,7 @@ body {
 }
 
 .card_menu_bg-color {
-  height: auto;
+  height: 80rem;
   background-color: #f6f6f6;
   position: relative;
   padding: 1rem;
@@ -420,6 +428,7 @@ body {
           flex-flow: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 20rem;
 }
 
 .dish {
@@ -427,6 +436,13 @@ body {
   border-radius: 1rem;
   padding: 0.5rem;
   height: 5rem;
+  z-index: 0;
+}
+
+.dish .price {
+  bottom: 1rem;
+  padding-right: 1rem;
+  display: inline-block;
 }
 
 .content_loader {

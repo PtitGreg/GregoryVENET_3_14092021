@@ -1,4 +1,4 @@
-.button_explore_resto-purple{
+.btn_exp_resto-purple{
     border: none;
     padding: $padding;
     border-radius: 3rem;
@@ -12,7 +12,7 @@
     }
 }
 
-.buttons_fonctioning{
+.btns_fonctioning{
     padding: $padding*2;
     background-color: $white;
     .button_choice_fonctioning{
@@ -91,4 +91,14 @@
         background: linear-gradient($color-primary, $color-secondary);
         
     }
+}
+
+.heart_child{
+    height: $size_heart;
+}
+
+.btn-purple{
+    @extend .btn_exp_resto-purple;
+    display: table;
+    
 }
