@@ -2,7 +2,6 @@
     @include btn_exp_resto-purple
 }
 
-
 .btns_fonctioning{
     padding: $padding*2;
     background-color: $white;
@@ -17,7 +16,10 @@
         cursor: pointer;
         transition: background-color .4s;
         &:hover{
-            background-color: $color_bg_hover-purple;            
+            background-color: $color_bg_hover-purple;
+            & .icon_button{
+                color: $color-primary;
+            }
         }
         .number_button{
             position: relative;
@@ -35,12 +37,11 @@
             color: gray;
             padding-left: $padding/2;
             padding-right: $padding*1.5;
-            &:hover {
-                color: $color-primary;
-            }
         }
     }
 }
+
+
 
 .text_card{
     @include flexbox(flex, column, null, null);
@@ -88,11 +89,12 @@
     height: $size_heart;
 }
 
-
 .btn-purple{
     @include btn_exp_resto-purple;
     position: relative;
     left: 50%;
+    padding: $padding $padding*3;
     transform: translateX(-50%);
+    margin: $margin*4 $margin;
 }
 

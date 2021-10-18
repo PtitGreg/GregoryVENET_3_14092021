@@ -1,14 +1,29 @@
-.content_loader{
-    @include flexbox(flex, null, null, center);
-    background-color: $color-primary;
+#content_loader{
+    @include flexbox(flex, null, center, center);
+    opacity: 0.95;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    animation: bg_loader 3s;
 }
+
+@keyframes bg_loader {
+    0%{
+        background-color: $color-primary;
+        visibility: visible;
+    }
+    100%{
+        background-color: $color-primary;
+    }
+}
+
 .loader{
-        animation: loader 3s 300ms alternate-reverse forwards;
-        position: absolute;
-        top: 50%;
-        position: fixed;
-        z-index: 1;
-        transform: scale(0);
+    animation: loader 3s alternate-reverse ;
+    transform: scale(0);
 }
 @keyframes loader {
     0% {
@@ -29,3 +44,4 @@
 
     }
 }
+

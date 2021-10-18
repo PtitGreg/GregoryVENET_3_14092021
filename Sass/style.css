@@ -74,6 +74,7 @@
   position: absolute;
   padding: 1.8rem;
   font-size: 1.3rem;
+  color: #000000;
 }
 
 .header-fle-cen-cen-aro .title-size-color {
@@ -135,7 +136,7 @@
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.btn_exp_resto-purple:hover {
+.btn_exp_resto-purple:hover, .btn_exp_resto-purple:focus {
   opacity: 0.7;
   -webkit-box-shadow: 0px 5px 10px 0px #000000;
           box-shadow: 0px 5px 10px 0px #000000;
@@ -169,6 +170,10 @@
   background-color: #f5edff;
 }
 
+.btns_fonctioning .button_choice_fonctioning:hover .icon_button {
+  color: #9356DC;
+}
+
 .btns_fonctioning .button_choice_fonctioning .number_button {
   position: relative;
   left: -0.8rem;
@@ -193,10 +198,6 @@
   color: gray;
   padding-left: 0.5rem;
   padding-right: 1.5rem;
-}
-
-.btns_fonctioning .button_choice_fonctioning .icon_button:hover {
-  color: #9356DC;
 }
 
 .text_card {
@@ -280,12 +281,14 @@
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   position: relative;
   left: 50%;
+  padding: 1rem 3rem;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  margin: 4rem 1rem;
 }
 
-.btn-purple:hover {
+.btn-purple:hover, .btn-purple:focus {
   opacity: 0.7;
   -webkit-box-shadow: 0px 5px 10px 0px #000000;
           box-shadow: 0px 5px 10px 0px #000000;
@@ -407,9 +410,24 @@ body {
   bottom: 12rem;
 }
 
+.section {
+  background-color: #f6f6f6;
+}
+
 .img_html_child-size {
   width: 100%;
-  height: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title_type_dish {
+  font-weight: 100;
+  border-bottom: #99E2D0 0.2rem solid;
+  width: 2rem;
+  padding: 0.33333rem 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .title_child-flex-pol {
@@ -435,12 +453,12 @@ body {
 }
 
 .card_menu_bg-color {
-  height: 80rem;
+  height: 100%;
   background-color: #f6f6f6;
   position: relative;
   padding: 1rem;
-  top: -50px;
   border-radius: 3rem 3rem 0 0;
+  margin-top: -50px;
 }
 
 .types_dish {
@@ -453,7 +471,7 @@ body {
           flex-flow: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 20rem;
+  height: 30rem;
 }
 
 .dish {
@@ -466,43 +484,82 @@ body {
   position: relative;
 }
 
-.dish .price {
-  bottom: 1rem;
-  padding-right: 1rem;
-  position: absolute;
-  right: 1rem;
-  top: 2rem;
-  font-weight: bold;
-}
-
-.dish .price .fa-check-circle {
-  position: absolute;
-  right: -6rem;
-  top: 2rem;
-  color: #ffffff;
-  background-color: #99E2D0;
-  width: 3rem;
-  height: 5rem;
-  border-radius: 0 1rem 1rem 0;
-  text-align: center;
-}
-
-.content_loader {
+.price_check_anim {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 8rem;
+  height: 5rem;
+  position: absolute;
+  top: 0rem;
+  right: -4em;
+}
+
+.price_check_anim .price {
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.price_check_anim .fa-check-circle {
+  height: auto;
+  width: 3rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #99E2D0;
+  padding-top: 2rem;
+}
+
+.price_check_anim .fa-check-circle:before {
+  display: none;
+  background-color: transparent;
+}
+
+#content_loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #9356DC;
+  opacity: 0.95;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  -webkit-animation: bg_loader 3s;
+          animation: bg_loader 3s;
+}
+
+@-webkit-keyframes bg_loader {
+  0% {
+    background-color: #9356DC;
+    visibility: visible;
+  }
+  100% {
+    background-color: #9356DC;
+  }
+}
+
+@keyframes bg_loader {
+  0% {
+    background-color: #9356DC;
+    visibility: visible;
+  }
+  100% {
+    background-color: #9356DC;
+  }
 }
 
 .loader {
-  animation: loader 3s 300ms alternate-reverse forwards;
-  position: absolute;
-  top: 50%;
-  position: fixed;
-  z-index: 1;
+  animation: loader 3s alternate-reverse;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
