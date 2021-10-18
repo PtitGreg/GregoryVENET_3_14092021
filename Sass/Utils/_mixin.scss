@@ -14,11 +14,20 @@
 
 @mixin bg-lin_grad-bi_color {
     transition: 1s;
-    background: linear-gradient(170deg, $color-secondary, $color-primary);
+    background: $color_bg_btn;
 }
 
-@mixin bi_color-pri-sec {
-    color: line
-
+@mixin btn_exp_resto-purple{
+    border: none;
+    padding: $padding;
+    border-radius: 3rem;
+    margin: $margin;
+    color: $white;
+    @include bg-lin_grad-bi_color;
+    cursor: pointer;
+    box-shadow: $box_shadow rgba(0,0,0,0.3);
+    &:hover{
+        opacity: 0.7;
+        box-shadow: $box_shadow $black;
+    }
 }
-

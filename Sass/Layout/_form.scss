@@ -120,18 +120,17 @@ body{
         right: 1rem;
         top: 2rem;
         font-weight: bold;
-       
-    } .fa-check-circle{
-        position: absolute;    
-        right: -2rem;
-        top: 2rem;
-        color: $white;
-        background-color: $color-tertiary;
-        width: 2rem;
-        height: 4rem;
-        border-radius:0 $bor_rad $bor_rad 0;
-        text-align: center;
-        
+        .fa-check-circle{
+            position: absolute;
+            right: -6rem;
+            top: 2rem;
+            color: $white;
+            background-color: $color-tertiary;
+            width: 3rem;
+            height: 5rem;
+            border-radius:0 $bor_rad $bor_rad 0;
+            text-align: center;
         }
+    } 
 }
 
