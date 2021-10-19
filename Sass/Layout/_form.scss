@@ -153,13 +153,12 @@ body{
     position: absolute;
     top: 0rem;
     right: -4em;
-    transition: 1s;
-    
+    transition: .5s;
     &:hover, &:focus{
         transform: translateX(-30%)
     }
     .price{
-        padding-top: $padding*2.5;
+        padding-top: $padding*2.7;
         padding-right: $padding;
         font-weight: bold;
         margin: 0;
@@ -167,7 +166,7 @@ body{
     }
     .fa-check-circle{
         transform: rotate(360deg);
-        transition: 1s;
+        transition: .5s;
     }
     
 }

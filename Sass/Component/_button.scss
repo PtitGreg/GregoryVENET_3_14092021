@@ -81,12 +81,17 @@
     bottom: 1.5rem;
     &:hover {
         background: linear-gradient($color-primary, $color-secondary);
-        
+        clip-path: $color_bg_btn;
     }
 }
 
 .heart_child{
     height: $size_heart;
+    clip-path:inset();
+    &:hover, &:focus {
+        overflow: hidden;
+        background: linear-gradient($color-primary, $color-secondary);
+    }
 }
 
 .btn-purple{
