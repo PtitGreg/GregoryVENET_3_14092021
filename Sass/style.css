@@ -137,9 +137,9 @@
 }
 
 .btn_exp_resto-purple:hover, .btn_exp_resto-purple:focus {
-  opacity: 0.7;
-  -webkit-box-shadow: 0px 5px 10px 0px #000000;
-          box-shadow: 0px 5px 10px 0px #000000;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 5px 10px 0px #323232;
+          box-shadow: 0px 5px 10px 0px #323232;
 }
 
 .btns_fonctioning {
@@ -289,9 +289,9 @@
 }
 
 .btn-purple:hover, .btn-purple:focus {
-  opacity: 0.7;
-  -webkit-box-shadow: 0px 5px 10px 0px #000000;
-          box-shadow: 0px 5px 10px 0px #000000;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 5px 10px 0px #323232;
+          box-shadow: 0px 5px 10px 0px #323232;
 }
 
 * {
@@ -303,7 +303,7 @@
   text-decoration: none;
 }
 
-h2, h3 {
+h2, h3, h4 {
   margin: 0;
 }
 
@@ -360,6 +360,7 @@ body {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 1rem;
   height: auto;
 }
 
@@ -441,6 +442,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .title_child-flex-pol .title_resto-weight {
@@ -471,49 +473,97 @@ body {
           flex-flow: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 30rem;
+  height: auto;
 }
 
 .dish {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 0.5rem;
-  height: 5rem;
+  margin-bottom: 1rem;
+  height: 4.5rem;
   z-index: 0;
+  -webkit-box-shadow: 0px 5px 10px 0px #eaeaea;
+          box-shadow: 0px 5px 10px 0px #eaeaea;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.dish:hover .price_check_anim, .dish:focus .price_check_anim {
+  -webkit-transform: translateX(-55%);
+      -ms-transform: translateX(-55%);
+          transform: translateX(-55%);
+}
+
+.dish:hover .fa-check-circle, .dish:focus .fa-check-circle {
+  -webkit-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .price_check_anim {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 8rem;
-  height: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 7rem;
+  height: 100%;
   position: absolute;
   top: 0rem;
   right: -4em;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.price_check_anim:hover, .price_check_anim:focus {
+  -webkit-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+          transform: translateX(-30%);
 }
 
 .price_check_anim .price {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
+  padding-right: 1rem;
   font-weight: bold;
+  margin: 0;
+  width: 5rem;
 }
 
 .price_check_anim .fa-check-circle {
-  height: auto;
-  width: 3rem;
-  color: #ffffff;
-  text-align: center;
-  background-color: #99E2D0;
-  padding-top: 2rem;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
-.price_check_anim .fa-check-circle:before {
-  display: none;
-  background-color: transparent;
+.check_bg-green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.check_bg-green .fa-check-circle {
+  color: #ffffff;
 }
 
 #content_loader {
