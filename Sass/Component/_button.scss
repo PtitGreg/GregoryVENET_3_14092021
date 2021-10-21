@@ -56,43 +56,33 @@
     }
 }
 
-@keyframes heart {
-    0% {
-
-    }
-    25% {
-
-    }
-    50% {
-
-    }
-    75% {
-
-    }
-    100% {
-
-    }
-}
-
 .heart{
     height: $size_heart;
     position: absolute;
     right: 1rem;
     bottom: 1.5rem;
     &:hover {
-        background: linear-gradient($color-primary, $color-secondary);
+        fill: linear-gradient($color-primary, $color-secondary);
         clip-path: $color_bg_btn;
     }
 }
 
-.heart_child{
-    height: $size_heart;
-    clip-path:inset();
-    &:hover, &:focus {
-        overflow: hidden;
-        background: linear-gradient($color-primary, $color-secondary);
+.heart {
+    width: 30px;
+    stroke: black;
+    cursor: pointer;
+  }
+  .heart-full {
+  stroke: none;
+  }
+  .heart-empty {
+    &:hover {
+      opacity: 0;
+      transition: 0.5s;
     }
 }
+
+  
 
 .btn-purple{
     @include btn_exp_resto-purple;

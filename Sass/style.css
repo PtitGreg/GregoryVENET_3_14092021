@@ -138,8 +138,8 @@
 
 .btn_exp_resto-purple:hover, .btn_exp_resto-purple:focus {
   opacity: 0.8;
-  -webkit-box-shadow: 0px 5px 10px 0px #323232;
-          box-shadow: 0px 5px 10px 0px #323232;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btns_fonctioning {
@@ -220,32 +220,6 @@
   margin: 0.5rem 0;
 }
 
-@-webkit-keyframes heart {
-  0% {
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-  }
-}
-
-@keyframes heart {
-  0% {
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-  }
-}
-
 .heart {
   height: 2rem;
   position: absolute;
@@ -254,26 +228,26 @@
 }
 
 .heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background: -o-linear-gradient(#9356DC, #FF79DA);
-  background: linear-gradient(#9356DC, #FF79DA);
+  fill: linear-gradient(#9356DC, #FF79DA);
   -webkit-clip-path: linear-gradient(170deg, #FF79DA, #9356DC);
           clip-path: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 
-.heart_child {
-  height: 2rem;
-  -webkit-clip-path: inset();
-          clip-path: inset();
+.heart {
+  width: 30px;
+  stroke: black;
+  cursor: pointer;
 }
 
-.heart_child:hover, .heart_child:focus {
-  overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background: -o-linear-gradient(#9356DC, #FF79DA);
-  background: linear-gradient(#9356DC, #FF79DA);
+.heart-full {
+  stroke: none;
+}
+
+.heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn-purple {
@@ -302,8 +276,8 @@
 
 .btn-purple:hover, .btn-purple:focus {
   opacity: 0.8;
-  -webkit-box-shadow: 0px 5px 10px 0px #323232;
-          box-shadow: 0px 5px 10px 0px #323232;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -438,8 +412,8 @@ body {
   font-weight: 100;
   border-bottom: #99E2D0 0.2rem solid;
   width: 2rem;
-  padding: 0.33333rem 0;
-  margin-bottom: 1rem;
+  padding: 1rem 0 0.33333rem 0;
+  margin: 1rem 0.33333rem;
   font-size: 1rem;
 }
 
@@ -459,11 +433,6 @@ body {
 
 .title_child-flex-pol .title_resto-weight {
   font-weight: 100;
-}
-
-.title_child-flex-pol .fa-heart {
-  font-size: 1.7rem;
-  padding: 1rem;
 }
 
 .card_menu_bg-color {

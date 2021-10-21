@@ -28,6 +28,6 @@
     box-shadow: $box_shadow rgba(0,0,0,0.3);
     &:hover, &:focus{
         opacity: 0.8;
-        box-shadow: $box_shadow darken($color: $chocolate, $amount: 1%)
+        box-shadow: $box_shadow darken($color: rgba(0,0,0,0.5), $amount: 100%)
     }
 }
