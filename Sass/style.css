@@ -486,23 +486,77 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: auto;
+  gap: 1rem;
 }
 
 .dish {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding-right: 4rem;
   height: 4.5rem;
-  z-index: 0;
   -webkit-box-shadow: 0px 5px 10px 0px #eaeaea;
           box-shadow: 0px 5px 10px 0px #eaeaea;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
+  opacity: 0;
+  -webkit-animation: dishes-fade-in-loader 0.4s 0.4s ease-in-out forwards;
+          animation: dishes-fade-in-loader 0.4s 0.4s ease-in-out forwards;
+}
+
+.dish--1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.dish--2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.dish--3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.dish--4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.dish--5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.dish--6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.dish--7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.dish--8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.dish--9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.dish--10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.dish:hover .title_para-over, .dish:focus .title_para-over {
+  padding-right: 3rem;
 }
 
 .dish:hover .price_check_anim, .dish:focus .price_check_anim {
@@ -512,9 +566,47 @@ body {
 }
 
 .dish:hover .fa-check-circle, .dish:focus .fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@-webkit-keyframes dishes-fade-in-loader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dishes-fade-in-loader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title_para-over {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 .price_check_anim {
@@ -529,15 +621,9 @@ body {
   position: absolute;
   top: 0rem;
   right: -4em;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
-
-.price_check_anim:hover, .price_check_anim:focus {
-  -webkit-transform: translateX(-30%);
-      -ms-transform: translateX(-30%);
-          transform: translateX(-30%);
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 .price_check_anim .price {
@@ -546,15 +632,6 @@ body {
   font-weight: bold;
   margin: 0;
   width: 5rem;
-}
-
-.price_check_anim .fa-check-circle {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
 }
 
 .check_bg-green {
@@ -576,6 +653,9 @@ body {
 
 .check_bg-green .fa-check-circle {
   color: #ffffff;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 #content_loader {
