@@ -1,6 +1,6 @@
 // For Main html page
 
-.header_flex-col-cent-cent{
+.header_flex{
     @include flexbox (flex, column, center, space-between);
     background-color: $white;
     height: 7.5rem;

@@ -25,6 +25,7 @@
     width: 1.5rem;
     position: absolute;
     right: 2rem;
+    
 }
 .heart_child-solid{
     cursor: pointer;
@@ -32,8 +33,7 @@
     fill: url(#text-fill);
     opacity: 0;
     transition: 0.4s;
-    &:hover, &:focus{
-        
+     &:hover, &:focus{
         position: relative;
         opacity: 1;
     }

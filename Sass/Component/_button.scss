@@ -3,15 +3,16 @@
 }
 
 .btns_fonctioning{
-    padding: $padding*2;
+    padding: $padding*3 $padding $padding*3 $padding*2;
     background-color: $white;
     .button_choice_fonctioning{
         @include flexbox(flex, null, null, null);
         align-items: center;
         background-color: $grey-primary;
         border-radius:1.5rem;
+        padding-right: $padding;
         height: 5rem;
-        margin: $margin*1.5 0;
+        margin: $margin*1.5 0 $margin;
         box-shadow: $box_shadow $grey-secondary;
         cursor: pointer;
         transition: background-color .4s;
