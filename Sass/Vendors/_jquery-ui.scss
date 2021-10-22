@@ -7,6 +7,9 @@
         gap: 2rem;
         font-size: 0.8rem;
     }
+    .ul-style_none{
+        @include flexbox(flex, row, center, space-between)
+    }
 }
 
 @media ($queri-m){
@@ -14,7 +17,7 @@
         @include flexbox(flex, null, center, center);
         padding: 1rem;
     }
-    .b_shadow{
+    body{
         box-shadow: $box_shadow;
         border-radius: $bor_rad;
     }
@@ -24,8 +27,6 @@
     .b_rad_bottom{
         border-radius: 0 0 $bor_rad $bor_rad;
     }
-    .ul-style_none{
-        @include flexbox(flex, row, center, space-between)
-    }
+    
 
 }
