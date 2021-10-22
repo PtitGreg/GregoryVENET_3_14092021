@@ -1,0 +1,40 @@
+// Html main
+.heart_main-light{
+    width: 1.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+.heart_main-solid{
+    width: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    fill: url(#text-fill);
+    opacity: 0;
+    transition: 0.4s;
+    &:hover{
+        
+        opacity: 1;
+    }
+}
+
+// html childs
+.heart_child-light{
+    width: 1.5rem;
+    position: absolute;
+    right: 2rem;
+}
+.heart_child-solid{
+    cursor: pointer;
+    width: 1.5rem;
+    fill: url(#text-fill);
+    opacity: 0;
+    transition: 0.4s;
+    &:hover, &:focus{
+        
+        position: relative;
+        opacity: 1;
+    }
+}
