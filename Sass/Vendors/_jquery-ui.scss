@@ -24,6 +24,8 @@
     .b_rad_bottom{
         border-radius: 0 0 $bor_rad $bor_rad;
     }
-
+    .ul-style_none{
+        @include flexbox(flex, row, center, space-between)
+    }
 
 }
