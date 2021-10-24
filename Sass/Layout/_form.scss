@@ -7,12 +7,13 @@ h2, h3, h4{
 
 html{
     background-color: $color-tertiary;
-    
+    @include flexbox(flex, column, stretch, center);
+
 }
 
 body{
-    max-width: 1000px;
-    margin:0 auto;
+    max-width: 1100px;
+    margin:auto;
 }
 
 .title_explorer{
@@ -93,7 +94,6 @@ body{
     border-bottom: $color-tertiary 0.2rem solid;
     width: 2rem;
     padding:$padding 0 $padding/3 0;
-    margin: $margin $margin/3;
     font-size: $font-size;
 }
 

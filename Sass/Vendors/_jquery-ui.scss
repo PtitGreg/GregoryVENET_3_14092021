@@ -14,8 +14,7 @@
 
 @media ($queri-m){
     html{
-        @include flexbox(flex, null, center, center);
-        padding: 1rem;
+        padding: $padding 0;
     }
     body{
         box-shadow: $box_shadow;
@@ -27,6 +26,12 @@
     .b_rad_bottom{
         border-radius: 0 0 $bor_rad $bor_rad;
     }
-    
-
+    .types_dishes-flex{
+        @include flexbox(flex, row, null, space-between);
+        gap: 1rem;
+        .types_dish{
+            width: 31%;
+        }
+        @include flexbox(flex, row, center, center);
+    }
 }

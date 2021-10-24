@@ -16,10 +16,13 @@
         box-shadow: $box_shadow $grey-secondary;
         cursor: pointer;
         transition: background-color .4s;
-        &:hover{
+        &:hover, &:focus{
             background-color: $color_bg_hover-purple;
             & .icon_button{
-                color: $color-primary;
+                color: $color-primary;                
+            }
+            .number_button{
+                transform: rotatex(2turn);
             }
         }
         .number_button{
@@ -30,9 +33,6 @@
             background-color: $color-primary;
             border-radius: 10rem;
             transition: transform 4s;
-            &:hover{
-                transform: rotatex(2turn);
-            }
         }
         .icon_button{
             color: gray;
