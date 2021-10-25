@@ -14,8 +14,7 @@
     fill: url(#text-fill);
     opacity: 0;
     transition: 0.4s;
-    &:hover{
-        
+    &:hover, &:hover{
         opacity: 1;
     }
 }

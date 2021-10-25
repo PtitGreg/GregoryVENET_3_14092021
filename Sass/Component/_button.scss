@@ -3,7 +3,7 @@
 }
 
 .btns_fonctioning{
-    padding: $padding*3 $padding $padding*3 $padding*2;
+    padding: $padding*2;
     background-color: $white;
     .button_choice_fonctioning{
         @include flexbox(flex, null, null, null);
@@ -12,7 +12,7 @@
         border-radius:1.5rem;
         padding-right: $padding;
         height: 5rem;
-        margin: $margin*1.5 0 $margin;
+        margin: $margin*1.5 0 $margin $margin;
         box-shadow: $box_shadow $grey-secondary;
         cursor: pointer;
         transition: background-color .4s;
@@ -50,7 +50,6 @@
     color: $black;
     & h3{
         margin: 0;
-               
     }
     .city{
         margin: $margin/2 0;

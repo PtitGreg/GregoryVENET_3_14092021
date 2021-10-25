@@ -2,16 +2,27 @@
     .content_cards{
         @include flexbox(flex, row wrap, null, null)
     }
-    .query_fonction{
-        @include flexbox(flex, row, center, center);
-        gap: 2rem;
-        font-size: 0.8rem;
-    }
     .ul-style_none{
         @include flexbox(flex, row, center, space-between)
     }
+    .ul-style-size{
+        @include flexbox(flex, row, center, space-between);
+    }
 }
-
+@media ($queri-s) {
+    .query_fonction{
+        @include flexbox(flex, row, center, space-between);
+        gap: 2rem;
+        font-size: 0.8rem;
+    }
+    .content_cards{
+        @include flexbox(flex, row wrap, center, center);
+        .link_card_resto{
+            max-width: 47.5%;
+        }
+    }
+    
+}
 @media ($queri-m){
     html{
         padding: $padding 0;
@@ -31,7 +42,6 @@
         gap: 1rem;
         .types_dish{
             width: 31%;
-        }
-        @include flexbox(flex, row, center, center);
+        } 
     }
 }
