@@ -11,8 +11,8 @@ html{
 }
 
 body{
-    max-width: 1100px;
     margin:auto;
+    width: 100%
 }
 
 .title_explorer{
@@ -110,7 +110,6 @@ body{
     border-radius: 3rem 3rem 0 0;
     margin-top: -50px;
 }
-
 .types_dish{
     @include flexbox(flex, column, null, null);
     height: auto;
@@ -118,11 +117,11 @@ body{
 }
 
 .dish {
+    height: 4.5rem;
     background-color: $white;
     border-radius: $bor_rad;
     padding: $padding/2;
     padding-right: $padding*4;
-    height: 4.5rem;
     box-shadow: $box_shadow $grey-secondary;
     cursor: pointer;
     position: relative;
@@ -159,7 +158,6 @@ body{
     }
 }
 .title_para-over{
-    width: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

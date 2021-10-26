@@ -26,10 +26,13 @@
 @media ($queri-m){
     html{
         padding: $padding 0;
+
     }
     body{
         box-shadow: $box_shadow;
         border-radius: $bor_rad;
+        max-width: 1100px;
+        margin: auto;
     }
     .b_rad_top{
         border-radius: $bor_rad $bor_rad 0 0;
