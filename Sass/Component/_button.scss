@@ -60,10 +60,7 @@
 
 .btn-purple{
     @include btn_exp_resto-purple;
-    position: relative;
-    left: 50%;
     padding: $padding $padding*3;
-    transform: translateX(-50%);
-    margin: $margin*4 $margin;
+    margin: auto;
 }
 
