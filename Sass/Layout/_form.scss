@@ -81,6 +81,7 @@ body{
 
 .img_html_child-size{
     width: 100%;
+    height: 20%;
     object-fit: cover;
     
 }
@@ -135,7 +136,7 @@ body{
     }
     &:hover, &:focus{
         .title_para-over{
-            padding-right: 3rem;
+            animation: title_par-width 0.4s forwards;
         }
         .price_check_anim{
             transform: translateX(-55%)
@@ -158,10 +159,18 @@ body{
     }
 }
 .title_para-over{
+    width: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    transition: .4s
+}
+@keyframes title_par-width {
+    0%{
+        width:100%;
+    }
+    100%{
+        width:80%;
+    }
 }
 .price_check_anim{
     @include flexbox(flex, null, null, space-between);
