@@ -1,5 +1,6 @@
 .btn_exp_resto-purple{
-    @include btn_exp_resto-purple
+    @include btn_exp_resto-purple;
+    margin-top: $margin;
 }
 
 .btns_fonctioning{
@@ -41,9 +42,6 @@
         }
     }
 }
-
-
-
 .text_card{
     @include flexbox(flex, column, null, null);
     padding: $padding/2 $padding;
@@ -55,12 +53,11 @@
         margin: $margin/2 0;
     }
 }
-
-  
-
 .btn-purple{
     @include btn_exp_resto-purple;
     padding: $padding $padding*3;
-    margin: auto;
 }
-
+.btn_purple{
+    text-align: center;
+    margin: $margin*3;
+}
