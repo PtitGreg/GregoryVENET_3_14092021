@@ -390,6 +390,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 .title_type_dish {
@@ -451,8 +452,8 @@ body {
   position: relative;
   overflow: hidden;
   opacity: 0;
-  -webkit-animation: dishes-fade-in-loader 0.4s  forwards;
-          animation: dishes-fade-in-loader 0.4s  forwards;
+  -webkit-animation: dishes-fade-in-loader 0.4s alternate forwards;
+          animation: dishes-fade-in-loader 0.4s alternate forwards;
 }
 
 .dish--1 {
@@ -559,19 +560,19 @@ body {
 
 @-webkit-keyframes title_par-width {
   0% {
-    width: 100%;
+    margin-right: 0;
   }
   100% {
-    width: 80%;
+    margin-right: 6rem;
   }
 }
 
 @keyframes title_par-width {
   0% {
-    width: 100%;
+    margin-right: 0;
   }
   100% {
-    width: 80%;
+    margin-right: 6rem;
   }
 }
 
