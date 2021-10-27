@@ -1,21 +1,22 @@
+// Mixin flexbox
 @mixin flexbox ($dis, $fle_flo, $ali_ite, $jus_con){
     display: $dis;
     flex-flow: $fle_flo;
     align-items: $ali_ite;
     justify-content: $jus-con;
 }
-
+// Mixin heart
 @mixin hearth-position {
     position: absolute;
     right: 2rem;
     bottom: 1.5rem;
 }
-
+// Mixin background bi-color hert
 @mixin bg-lin_grad-bi_color {
-    transition: .4s;
+    transition: 0.4s;
     background: $color_bg_btn;
 }
-
+// Mixin base button
 @mixin btn_exp_resto-purple{
     border: none;
     padding: $padding;

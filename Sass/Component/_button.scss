@@ -1,8 +1,11 @@
+// html page 
+// purple button 
 .btn_exp_resto-purple{
     @include btn_exp_resto-purple;
     margin-top: $margin;
 }
 
+// Running tile
 .btns_fonctioning{
     padding: $padding*2;
     background-color: $white;
@@ -42,6 +45,7 @@
         }
     }
 }
+// Restaurants Tiles
 .text_card{
     @include flexbox(flex, column, null, null);
     padding: $padding/2 $padding;
@@ -53,11 +57,13 @@
         margin: $margin/2 0;
     }
 }
+// childs html
+// Purple Button 
 .btn-purple{
     @include btn_exp_resto-purple;
     padding: $padding $padding*3;
 }
-.btn_purple{
+.div_btn-purple{
     text-align: center;
     margin: $margin*3;
 }

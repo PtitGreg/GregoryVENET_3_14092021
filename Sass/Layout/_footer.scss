@@ -1,8 +1,8 @@
+// Footer for all Pages
 .footer-color-size{
     background-color: $chocolate;
-    padding: $padding/2 $padding*2;
-    }
-
+    padding: $padding*2;
+}
 .text-color-size{
     color: $white;
     font-weight: 500;
@@ -12,7 +12,6 @@
         transition: .4s;
     }
 }
-
 .ul-style-size{
     list-style: none;
     padding: 0;

@@ -1,3 +1,4 @@
+// Animation connect firt HTML
 #content_loader{
     @include flexbox(flex, null, center, center);
     opacity: 0.95;
@@ -11,7 +12,6 @@
     top: 0;
     animation: bg_loader 3s;
 }
-
 @keyframes bg_loader {
     0%{
         background-color: $color-primary;
@@ -21,7 +21,6 @@
         background-color: $color-primary;
     }
 }
-
 .loader{
     animation: loader 3s alternate-reverse ;
     transform: scale(0);

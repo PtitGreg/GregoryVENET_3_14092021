@@ -1,10 +1,14 @@
+// Import Page Sass
 @import "Utils/_variable";
 @import "Utils/_mixin";
 @import "Base/_typography";
+@import "base/reset";
+@import "component/loader";
 @import "Layout/header";
-@import "Layout/footer";
+@import "layout/restaurants_main";
+@import "layout/restaurants_childs";
 @import "Component/_button";
-@import "Layout/_form.scss";
-@import "layout/loader";
 @import "component/heart";
-@import "vendors/_jquery-ui"
+@import "Layout/footer";
+@import "Layout/_home";
+@import "component/media_queries";

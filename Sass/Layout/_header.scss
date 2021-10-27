@@ -1,5 +1,4 @@
 // For Main html page
-
 .header_flex{
     @include flexbox (flex, column, center, space-between);
     background-color: $white;
@@ -21,7 +20,6 @@
         }
     }    
  }
-
 .title-size-color{
     font-weight: 100;
     font-size: xx-large;
@@ -31,6 +29,7 @@
     margin: 0;
 }
 
+
 // for childs html
 .header-fle-cen-cen-aro{
     background-color: $grey-primary;    
@@ -39,7 +38,6 @@
         padding: $padding*1.8;
         font-size: 1.3rem;
         color: $black;
-
     }
     .title-size-color{
         text-align: center;

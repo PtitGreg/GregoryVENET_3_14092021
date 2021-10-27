@@ -1,0 +1,12 @@
+// Top main html
+.title_explorer{
+    @include flexbox(flex, column, center, center);
+    text-align: center;
+    background-color: $grey-primary;
+    padding: $padding;
+    padding-bottom: $padding*3;
+    .title_h2-size{
+        width: 80%;
+        margin: 0.5rem;
+    }
+}
