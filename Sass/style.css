@@ -390,7 +390,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 4/3;
+  aspect-ratio: 5/3;
 }
 
 .title_type_dish {
@@ -507,8 +507,7 @@ body {
 }
 
 .dish:hover .title_para-over, .dish:focus .title_para-over {
-  -webkit-animation: title_par-width 0.4s forwards;
-          animation: title_par-width 0.4s forwards;
+  margin-right: 3rem;
 }
 
 .dish:hover .price_check_anim, .dish:focus .price_check_anim {
@@ -556,24 +555,9 @@ body {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-}
-
-@-webkit-keyframes title_par-width {
-  0% {
-    margin-right: 0;
-  }
-  100% {
-    margin-right: 6rem;
-  }
-}
-
-@keyframes title_par-width {
-  0% {
-    margin-right: 0;
-  }
-  100% {
-    margin-right: 6rem;
-  }
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .price_check_anim {

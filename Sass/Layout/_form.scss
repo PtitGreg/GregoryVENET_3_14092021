@@ -4,17 +4,14 @@
 h2, h3, h4{
     margin: 0;
 }
-
 html{
     background-color: $color-tertiary;
     @include flexbox(flex, column, stretch, center);
 }
-
 body{
     margin:auto;
     width: 100%
 }
-
 .title_explorer{
     @include flexbox(flex, column, center, center);
     text-align: center;
@@ -24,10 +21,8 @@ body{
     .title_h2-size{
         width: 80%;
         margin: 0.5rem;
-    }   
+    }
 }
-
-
 .restaurant{
     background-color: $grey-primary;
     padding: $padding*2;
@@ -82,7 +77,7 @@ body{
 .img_html_child-size{
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    aspect-ratio: 5/3;
 }
 
 .title_type_dish{
@@ -134,8 +129,7 @@ body{
     }
     &:hover, &:focus{
         .title_para-over{
-            animation: title_par-width 0.4s forwards;
-            
+            margin-right: 3rem;
         }
         .price_check_anim{
             transform: translateX(-55%)
@@ -161,14 +155,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-@keyframes title_par-width {
-    0%{
-        margin-right: 0;
-    }
-    100%{
-        margin-right: 6rem
-    }
+    transition: 0.4s;
 }
 .price_check_anim{
     @include flexbox(flex, null, null, space-between);
@@ -178,7 +165,6 @@ body{
     top: 0rem;
     right: -4em;
     transition: .4s;
-
     .price{
         padding-top: $padding*2.7;
         padding-right: $padding;
@@ -186,7 +172,6 @@ body{
         margin: 0;
         width: 5rem;
     }
-    
 }
 .check_bg-green{
     @include flexbox(flex, null, center, center);
