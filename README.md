@@ -3,7 +3,7 @@
 [Page web en construction disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_3_14092021/)
 
 # Dynamisez une page web avec des animations CSS
-# Scénario
+## Scénario
 
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
 
@@ -35,7 +35,7 @@ Vous trouvez [les maquettes](https://s3-eu-west-1.amazonaws.com/course.oc-static
 
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
 
-# Compétences évaluées
+## Compétences évaluées
 * Mettre en place une structure de navigation pour un site web
 * Mettre en place son environnement Front-End
 * Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
