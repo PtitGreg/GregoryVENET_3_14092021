@@ -1,6 +1,6 @@
 # Projet 3 de la formation Dev web Openclassrooms
 
-[Page web en construction disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_3_14092021/)
+[Page web disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_3_14092021/)
 
 # Dynamisez une page web avec des animations CSS
 ## Scénario
