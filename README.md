@@ -1,3 +1,10 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
+<br />
+
 # Projet 3 de la formation Dev web Openclassrooms
 
 [Page web disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_3_14092021/)
