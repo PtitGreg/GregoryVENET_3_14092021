@@ -43,3 +43,94 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 * Mettre en œuvre des effets CSS graphiques avancés
 * Assurer la cohérence graphique d'un site web
 
+
+## Remarques sur l'évaluation
+ 
+
+## 🕵️‍ Compétences évaluées
+ 
+
+ 
+
+### 🎯 Développer chaque page d'un site web de manière cohérente et structurée
+
+   ✅ Validé
+
+❒ La page HTML passe la validation W3C HTML sans erreur.
+❒ Les balises HTML sont définies avec la sémantique HTML5 pertinente.
+❒ Le code HTML et CSS est correctement indenté.
+### 🎯 Assurer la cohérence graphique d'un site web
+
+    ✅ Validé
+
+❒ L'aspect visuel correspond à la maquette sur écran mobile.
+❒ Aucun framework (type Bootstrap) n'est utilisé pour ce projet.
+❒ La maquette s’adapte sur mobile, tablette et desktop.
+❒ Le site s’affiche sans perte d’information et sans barre de défilement horizontale sur les différentes tailles (smartphone, tablette, écran de portable, écran fixe (au moins jusqu’à une résolution “hd” (1920*1080)).
+### 🎯 Mettre en œuvre des effets CSS graphiques avancés
+
+    ✅ Validé
+
+❒ Toutes les animations demandées sont présentes.
+❒ Le code CSS passe la validation W3C CSS.
+❒ Le code CSS est écrit dans un ou plusieurs fichiers CSS.
+❒ Aucun code CSS n'est appliqué via un attribut style dans une balise HTML.
+### 🎯Utiliser un système de gestion de versions pour le suivi du projet et son hébergement.
+
+    ✅ Validé
+
+ 
+
+❒ Le code de l’application est hébergé sur GitHub ou GitLab.
+
+❒ Le versionning de l’application est effectué régulièrement.
+
+### 🎯 Mettre en place son environnement Front-End
+
+    ✅ Validé
+
+❒ Le site est déployé grâce à Git, sans passer par un logiciel de FTP (avec GitHub Pages par exemple).
+
+
+
+## Livrable
+
+Points forts :
+
+- 💡livrables précis et complets
+
+- bonne utilisation de saas (mixins , variables, architecture de fichier )
+
+- animations conformes
+
+Axes d'amélioration :  RAS
+
+ 
+
+## Soutenance
+
+Points forts :
+
+⏱ bon timing
+
+👨‍💻 bon jeu de rôle
+
+ 
+
+## Axes d'amélioration :
+
+ 
+
+📄 Réaliser un support pour accompagner sa présentation :
+
+https://openclassrooms.com/fr/courses/5870121-realisez-un-diaporama-pour-accompagner-votre-presentation
+
+ 
+
+## Avis :
+
+ L'étudiant a réalisé une très bonne présentation , respectant le timing demandé , ce dernier a répondu correctement aux différentes questions démontrant ainsi une maîtrise complète du projet .
+
+# ✅ ✅ ✅ ✅  PROJET VALIDÉ , ✅ ✅ ✅ ✅  
+
+FELICITATIONS !!! 🍾🍾🍾🍾
