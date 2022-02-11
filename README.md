@@ -4,6 +4,7 @@
 [Page web disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_3_14092021/)
 
 # Dynamisez une page web avec des animations CSS
+
 ## Scénario
 
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
@@ -37,20 +38,16 @@ Vous trouvez [les maquettes](https://s3-eu-west-1.amazonaws.com/course.oc-static
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
 
 ## Compétences évaluées
-* Mettre en place une structure de navigation pour un site web
-* Mettre en place son environnement Front-End
-* Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
-* Mettre en œuvre des effets CSS graphiques avancés
-* Assurer la cohérence graphique d'un site web
 
++ Mettre en place une structure de navigation pour un site web
++ Mettre en place son environnement Front-End
++ Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
++ Mettre en œuvre des effets CSS graphiques avancés
++ Assurer la cohérence graphique d'un site web
 
 # Remarques sur l'évaluation
- 
 
 ## 🕵️‍ Compétences évaluées
- 
-
- 
 
 ### 🎯 Développer chaque page d'un site web de manière cohérente et structurée
 
@@ -59,6 +56,7 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 ❒ La page HTML passe la validation W3C HTML sans erreur.
 ❒ Les balises HTML sont définies avec la sémantique HTML5 pertinente.
 ❒ Le code HTML et CSS est correctement indenté.
+
 ### 🎯 Assurer la cohérence graphique d'un site web
 
     ✅ Validé
@@ -67,6 +65,7 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 ❒ Aucun framework (type Bootstrap) n'est utilisé pour ce projet.
 ❒ La maquette s’adapte sur mobile, tablette et desktop.
 ❒ Le site s’affiche sans perte d’information et sans barre de défilement horizontale sur les différentes tailles (smartphone, tablette, écran de portable, écran fixe (au moins jusqu’à une résolution “hd” (1920*1080)).
+
 ### 🎯 Mettre en œuvre des effets CSS graphiques avancés
 
     ✅ Validé
@@ -75,11 +74,10 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 ❒ Le code CSS passe la validation W3C CSS.
 ❒ Le code CSS est écrit dans un ou plusieurs fichiers CSS.
 ❒ Aucun code CSS n'est appliqué via un attribut style dans une balise HTML.
-### 🎯Utiliser un système de gestion de versions pour le suivi du projet et son hébergement.
+
+### 🎯Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 
     ✅ Validé
-
- 
 
 ❒ Le code de l’application est hébergé sur GitHub ou GitLab.
 
@@ -91,21 +89,17 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 
 ❒ Le site est déployé grâce à Git, sans passer par un logiciel de FTP (avec GitHub Pages par exemple).
 
-
-
 ## Livrable
 
 Points forts :
 
-- 💡livrables précis et complets
++ 💡livrables précis et complets
 
-- bonne utilisation de saas (mixins , variables, architecture de fichier )
++ bonne utilisation de saas (mixins , variables, architecture de fichier )
 
-- animations conformes
++ animations conformes
 
 Axes d'amélioration :  RAS
-
- 
 
 ## Soutenance
 
@@ -115,22 +109,16 @@ Points forts :
 
 👨‍💻 bon jeu de rôle
 
- 
-
-## Axes d'amélioration :
-
- 
+## Axes d'amélioration
 
 📄 Réaliser un support pour accompagner sa présentation :
 
-https://openclassrooms.com/fr/courses/5870121-realisez-un-diaporama-pour-accompagner-votre-presentation
+<https://openclassrooms.com/fr/courses/5870121-realisez-un-diaporama-pour-accompagner-votre-presentation>
 
- 
-
-## Avis :
+## Avis
 
  L'étudiant a réalisé une très bonne présentation , respectant le timing demandé , ce dernier a répondu correctement aux différentes questions démontrant ainsi une maîtrise complète du projet .
 
-# ✅ ✅ ✅ ✅  PROJET VALIDÉ , ✅ ✅ ✅ ✅  
+# ✅ ✅ ✅ ✅  PROJET VALIDÉ , ✅ ✅ ✅ ✅
 
 FELICITATIONS !!! 🍾🍾🍾🍾
